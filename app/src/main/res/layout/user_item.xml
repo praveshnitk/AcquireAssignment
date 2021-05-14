@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:id="@+id/container"
+            android:foregroundGravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:hint="Name"
+                android:padding="3dp"
+                android:id="@+id/tvName"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:hint="Email"
+                android:padding="3dp"
+                android:id="@+id/tvEmail"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:hint="Location"
+                android:padding="3dp"
+                android:drawableLeft="@drawable/ic_pin"
+                android:id="@+id/tvLocation"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/city"
+                android:hint="Address"
+                android:padding="3dp"
+                android:id="@+id/tvAddress"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:hint="Phone"
+                android:padding="3dp"
+                android:drawableLeft="@drawable/ic_call"
+                android:id="@+id/tvPhone"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
